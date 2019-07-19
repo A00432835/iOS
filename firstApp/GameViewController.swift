@@ -20,6 +20,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         setNumberField()
         setHowMany()
+        setEmpty()
         // Do any additional setup after loading the view.
     }
     
@@ -30,7 +31,9 @@ class GameViewController: UIViewController {
         howMany?.text = generateRandStringBelow4()
     }
     
-    
+    func setEmpty(){
+        answer?.text = ""
+    }
     
     func showLostAlert(){
         let alert = UIAlertController(title: "Sorry, You lost", message: "Please Try Again!", preferredStyle: .alert)
@@ -76,6 +79,7 @@ class GameViewController: UIViewController {
         
     }
     
+    
     @IBAction func submit(_ sender: Any) {
         
         let answerCount = answer?.text?.count
@@ -100,4 +104,12 @@ class GameViewController: UIViewController {
         
         
     }
+    
+    
+    @IBAction func reload(_ sender: Any) {
+        setNumberField()
+        setHowMany()
+        setEmpty()
+    }
+    
 }
