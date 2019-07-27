@@ -1,0 +1,3 @@
+
+# iOS Assignment 2
+#### 1.On selecting thetable view cell, navigateto a new view controller (WondersDetailsViewController). Populate the UI withname,descriptionand the imagethat you have retrieved from the jsonfile.Hints:•For images you will have to perform a network call, the function that will do the job is shared on slack. •Fordisplayingratings, you’ll have to see task-2.•Find the “selecting rows”section on https://developer.apple.com/documentation/uikit/uitableview2.Follow this tutorial to learn more about custom control in swift. https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/ImplementingACustomControl.htmlPS: You won’t be graded fortask-2. It is purely for learning purposes!
